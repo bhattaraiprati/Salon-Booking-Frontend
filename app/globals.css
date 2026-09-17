@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer components {
+  .input { @apply w-full rounded-xl border border-gray-200 bg-white px-3.5 py-2.5 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-[#2C7A6E] focus:ring-2 focus:ring-[#2C7A6E]/15; }
+  .button-primary { @apply rounded-xl bg-[#2C7A6E] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#236258]; }
+  .button-secondary { @apply rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-600 transition hover:border-gray-300 hover:bg-gray-50; }
+}
